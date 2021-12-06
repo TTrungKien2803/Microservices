@@ -14,8 +14,7 @@
 
 * Ngoài các service, trong kiến trúc microsercies còn có những thành phần đặc trưng khác.
   * Management/orchestration: Đây là thành phần chịu trách nhiệm đặt các service vào các node, xác định lỗi, cân bằng service giữa các node, ... Thông thường, thành phần này là một công nghệ có sẵn như Kubernetes chứ ko phải là một thứ chúng ta tự xây dựng.
-    * Một Node là một máy worker trong Kubernetes và có thể là máy ảo hoặc máy vật lý, tuỳ thuộc vào cluster.
-      * https://kubernetes.io
+    * Một Node là một máy worker trong Kubernetes và có thể là máy ảo hoặc máy vật lý, tuỳ thuộc vào cluster. https://kubernetes.io
   * API Gateway: API gateway là cổng truy cập cho client. Thay vì gọi trực tiếp service, client gọi API gateway sau đó API gateway sẽ gọi đến các service thích hợp.
     * Ưu điểm khi sử dụng API gateway:
       * Tách client khỏi service. Các service có thể nâng cấp lên phiên bản mới hoặc tái cấu trúc mà không cần cập nhật tât cả client.
